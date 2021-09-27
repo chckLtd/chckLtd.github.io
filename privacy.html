@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apDple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="cleartype" content="on">
+    <title>隐私权政策</title>
+    <style type="text/css">
+        body {
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+            font-family: arial, Helvetica, sans-serif, Microsoft YaHei;
+            color: #333;
+            tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -moz-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+
+        @media screen and (min-width:480px) {
+
+            html,
+            body,
+            button,
+            input,
+            select,
+            textarea {
+                font-size: 18px
+            }
+        }
+
+        @media screen and (min-width:640px) {
+
+            html,
+            body,
+            button,
+            input,
+            select,
+            textarea {
+                font-size: 24px
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1rem;
+            padding: .5rem 0 .5rem 0;
+        }
+
+        .text {
+            padding: 1.1rem 5%;
+            font-size: .92rem;
+        }
+
+        .text p,
+        .text div {
+            line-height: 1.5rem;
+            padding-top: .4rem;
+            font-size: .9rem;
+            position: relative;
+        }
+
+        strong {
+            display: block;
+            font-size: 1rem;
+            padding: 1.2rem 0 0 0rem;
+        }
+
+        .indent {
+            text-indent: 2rem;
+        }
+
+        .text p.level-2 {
+            text-indent: 2rem;
+        }
+
+        .company {
+            font-size: .8rem;
+            margin-top: 20px;
+            text-align: center;
+            font-weight: 500;
+            transform: scale(.8);
+        }
+
+        .exemption {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .link {
+            font-weight: 600;
+            color: #333333;
+        }
+
+
+        .table {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 0 !important;
+        }
+
+        .table .row {
+            display: flex;
+            border-top: 1px solid #ccc;
+            padding: 0;
+        }
+
+        .table .header {
+            border-top: none;
+        }
+
+        .row .col {
+            padding: 3px;
+            font-size: .4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .row .col:nth-child(1) {
+            width: 15%;
+            border-right: 1px solid #ccc;
+        }
+
+        .row .col:nth-child(2) {
+            width: 35%;
+            border-right: 1px solid #ccc;
+        }
+
+        .row .col:nth-child(3) {
+            width: 30%;
+            border-right: 1px solid #ccc;
+        }
+
+        .row .col:nth-child(4) {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="text" id='article' style='display: none;'>
+
+    </article>
+    <script>
+
+        function getQueryStringArgs() {
+            //取得查询字符串并去掉开头的问号
+            var qs = (location.search.length > 0 ? location.search.substring(1) : ""),
+                //保存数据的对象
+                args = {},
+                //取得每一项
+                items = qs.length ? qs.split("&") : [],
+                item = null,
+                name = null,
+                value = null,
+                //在 for 循环中使用
+                i = 0,
+                len = items.length;
+            //逐个将每一项添加到 args 对象中
+            for (i = 0; i < len; i++) {
+                item = items[i].split("=");
+                name = decodeURIComponent(item[0]);
+                value = decodeURIComponent(item[1]);
+                if (name.length) {
+                    args[name] = value;
+                }
+            }
+            return args;
+        }
+
+        !function () {
+            var params = getQueryStringArgs();
+            var _html = document.querySelector('#article');
+            _html.innerHTML = `<h2>隐私政策</h2>
+        <div class="indent">更新日期：2021年9月26日</div>
+        <div class="indent">生效日期：2021年9月26日</div>
+        <div class="indent">我们将通过《${params && params.appname || '账号管理'}隐私政策》（以下简称“本政策”）帮助您了解我们会如何收集、使用和存储您的个人信息及您享有何种权利。</div>
+        <div class="indent">本政策适用于${params && params.appname || '账号管理'}提供的产品或服务。如我们及关联公司产品或服务中使用了${params && params.appname || '账号管理'}提供的产品或服务但未设独立法律声明及隐私权政策的，则本政策同样适用于该部分产品或服务。</div>
+        <div class="indent">本政策与您使用我们的服务关系紧密，我们建议您仔细阅读并理解本政策全部内容，在确认充分理解并同意后再开始使用。我们努力用通俗易懂、简明扼要的文字表达，并对本政策中与您的权益存在重大关系的条款，采用粗体字进行标注以提示您注意。</div>
+        <div class="indent">您使用或继续使用我们的服务，即意味着同意我们按照本政策收集、使用、储存和分享您的相关信息。</div>
+        <div class="indent">本政策将帮助您了解以下内容：</div>
+        <div class="indent">1、我们如何收集和使用您的信息</div>
+        <div class="indent">2、信息的存储</div>
+        <div class="indent">3、信息安全</div>
+        <div class="indent">4、我们如何使用信息</div>
+        <div class="indent">5、企业合作</div>
+        <div class="indent">6、您的权利</div>
+        <div class="indent">7、变更</div>
+        <div class="indent">8、与我们联系</div>
+        
+        <strong>一、我们如何收集和使用您的个人信息</strong>
+        <p class="indent">在您使用我们的产品及/或服务时，我们需要/可能需要收集和使用的您的个人信息包括如下两种：</p>
+        <p class="indent">1.为实现向您提供我们产品及/或服务的基本功能，您须授权我们收集、使用的必要的信息。如您拒绝提供相应信息，您将无法正常使用我们的产品及/或服务；</p>
+        <p class="indent">2.为实现向您提供我们产品及/或服务的附加功能，经您选择授权我们收集、使用的信息。如您拒绝提供，您将无法正常使用相关附加功能或无法达到我们拟达到的功能效果，但并不会影响您正常使用我们产品及/或服务的基本功能。 </p>
+        <p class="indent">您理解并同意：</p>
+        <p class="indent">1.我们致力于打造各种各样的产品和服务以满足您的需求，因我们向您提供的产品和服务种类众多且不同用户选择使用的具体产品/服务范围存在差异，相应的，基本/附加功能及收集使用的个人信息类型、范围等会有所区别，请以具体的产品/服务功能为准；</p>
+        <p class="indent">2.为给您带来更好的产品和服务体验，我们在持续努力改进我们的技术，随之我们可能会不时推出新的或优化后的功能，可能需要收集、使用新的个人信息或变更个人信息使用目的或方式。对此，我们将通过更新本政策、弹窗、页面提示等方式另行向您说明对应信息的收集目的、范围及使用方式，并为您提供自主选择同意的方式，且在征得您明示同意后收集、使用。在此过程中，如果您有任何疑问、意见或建议的，您可通过我们提供的各种联系方式与我们联系，我们会尽快为您作出解答。</p>
+        <p class="indent">我们会实现本政策下述的各项功能，收集和使用您的个人信息：</p>
+        <p class="indent">（一）为您提供商品或服务信息展示</p>
+        <p class="indent">在您使用我们服务过程中，为了解产品适配性、识别账号异常状态、向您提供更契合您需求的页面展示和搜索结果，我们可能会请求您提供或自动收集您的使用情况并储存为网络日志信息，包括：</p>
+        <p class="indent">位置信息：我们会根据记录您测的${params && params.appname || '账号管理'}所在的位置，并展示给您。</p>
+        <p class="indent">服务日志信息：当您使用我们的网站或客户端提供的产品或服务时，我们会自动收集您对我们服务的详细使用情况，作为服务日志保存。包括浏览、点击查看、搜索查询、收藏、分享、下载以及IP地址、电信运营商、使用的语言、访问日期和时间。</p>
+        <p class="indent">请注意，单独的设备信息、日志信息、位置信息是无法识别特定自然人身份的信息。如果我们将这类非个人信息与其他信息结合用于识别特定自然人身份，或者将其与个人信息结合使用，则在结合使用期间，这类非个人信息将被视为个人信息，除取得您授权或法律法规另有规定外，我们会将这类信息做匿名化、去标识化处理。为向您提供更便捷、更符合您个性化需求的信息展示、搜索及推送服务，我们会根据您的设备信息、位置信息和服务日志信息，提取您的偏好特征，并基于特征标签进行间接人群画像，展示、推送信息。</p>
+        <p class="indent">此外，我们也会为了不断改进和优化上述的功能来使用您的上述信息。</p>
+        <p class="indent">读取/写入外部存储权限：用来保存分贝仪测试的数据结果。</p>
+        <p class="indent">（二）客服及争议处理</p>
+        <p class="indent">当您与我们联系申请处理纠纷时，为了保障您的账号及系统安全，我们需要您提供必要的个人信息以核验您的用户身份。</p>
+        <p class="indent">为便于与您联系、尽快帮助您解决问题或记录相关问题的处理方案及结果，我们可能会保存您与我们的通信/通话记录及相关内容（包括账号信息、您为了证明相关事实提供的其他信息，或您留下的联系方式信息）。</p>
+        <p class="indent">为了提供服务及改进服务质量的合理需要，我们还可能使用的您的其他信息，包括您与客服联系时您提供的相关信息。</p>
+        <p class="indent">请您注意，您开启任一权限即代表您授权我们可以收集和使用相关个人信息来为您提供对应服务，您一旦关闭任一权限即代表您取消了授权，我们将不再基于对应权限继续收集和使用相关个人信息，也无法为您提供该权限所对应的服务。但是，您关闭权限的决定不会影响此前基于您的授权所进行的信息收集及使用。</p>
+        <p class="indent">（三）其他</p>
+        <p class="indent">1.若你提供的信息中含有其他用户的个人信息，在向我们提供这些个人信息之前，您需确保您已经取得合法的授权。</p>
+        <p class="indent">2.若我们将信息用于本政策未载明的其他用途，或者将基于特定目的收集而来的信息用于其他目的时，或者我们主动从第三方处获取您的个人信息，均会事先征求您的同意。</p>
+        <p class="indent">若我们从第三方处间接获取您的信息的，我们会在收集前明确以书面形式要求该第三方在已依法取得您同意后收集个人信息，并向您告知共享的信息内容，且涉及敏感信息的在提供给我们使用前需经过您的明确确认，要求第三方对个人信息来源的合法性和合规性作出承诺，如第三方有违反行为的，我们会明确要求对方承担相应法律责任；同时，我们的专业安全团队对个人信息会进行安全加固（包括敏感信息报备、敏感信息加密存储、访问权限控制等）。我们会使用不低于我们对自身用户个人信息同等的保护手段与措施对间接获取的个人信息进行保护。</p>
+        <p class="indent">3.征得授权同意的例外</p>
+        <p class="indent">您充分理解并同意，根据相关法律法规规定，我们在以下情形中收集、使用您的个人信息无需征得您的授权同意，且我们可能不会响应您提出的更正/修改、删除、注销、撤回同意、索取信息的请求：</p>
+        <p class="indent">(1)与国家安全、国防安全有关的；</p>
+        <p class="indent">(2)与公共安全、公共卫生、重大公共利益有关的；</p>
+        <p class="indent">(3)与犯罪侦查、起诉、审判和判决执行等有关的；</p>
+        <p class="indent">(4)出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到您本人同意的；</p>
+        <p class="indent">(5)所收集的个人信息是您自行向社会公众公开的；</p>
+        <p class="indent">(6)从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道；</p>
+        <p class="indent">(7)根据您的要求签订合同所必需的；</p>
+        <p class="indent">(8)用于维护所提供的产品或服务的安全稳定运行所必需的，例如发现、处置产品或服务的故障；</p>
+        <p class="indent">(9)为合法的新闻报道所必需的；</p>
+        <p class="indent">(10)学术研究机构基于公共利益开展统计或学术研究所必要，且对外提供学术研究或描述的结果时，对结果中所包含的个人信息进行去标识化处理的；</p>
+        <p class="indent">(11)法律法规规定的其他情形。</p>
+        <p class="indent">4.如我们停止运营${params && params.appname || '账号管理'}产品或服务，我们将及时停止继续收集您个人信息的活动，将停止运营的通知以逐一送达或公告的形式通知您，并对我们所持有的与已关停业务相关的个人信息进行删除或匿名化处理。</p>
+        <p class="indent">5.在您主动注销账号时，我们将根据适用法律法规的要求尽快使其匿名或删除您的个人信息。</p>
+        <strong>二、信息的存储</strong>
+        <p class="indent">1.信息存储的地点</p>
+        <p class="indent">我们会按照法律法规规定，将境内收集的用户个人信息存储于中国境内。</p>
+        <p class="indent">目前我们不会跨境传输或存储您的个人信息。将来如需跨境传输或存储的，我们会向您告知信息出境的目的、接收方、安全保证措施和安全风险，并征得您的同意。</p>
+        <p class="indent">2.信息存储的方式和期限</p>
+        <p class="indent">邮箱或其他第三方账号：若您需要使用${params && params.appname || '账号管理'}服务，我们需要一直保存您的账户，以保证您正常使用该服务，当您注销${params && params.appname || '账号管理'}帐户后，我们将删除相应的信息；</p>
+        <p class="indent">图片或视频：当您使用收藏等功能收藏了图片、视频，我们需要保存您上述信息及相关评论，以保证您正常使用；当您主动删除上述信息后，我们将删除相应的信息。当我们的产品或服务发生停止运营的情形时，我们将以推送通知、公告等形式通知您，并在合理的期限内删除您的个人信息或进行匿名化处理。</p>
+        <strong>三 信息安全</strong>
+        <p class="indent">1.安全保护措施</p>
+        <p class="indent">我们努力为用户的信息安全提供保障，以防止信息的泄露、丢失、不当使用、未经授权访问和披露等。我们使用多方位的安全保护措施，以确保用户的个人信息保护处于合理的安全水平，包括技术保护手段、管理制度控制、安全体系保障等诸多方面。</p>
+        <p class="indent">我们采用业界领先的技术保护措施。我们使用的技术手段包括但不限于防火墙、加密（例如SSL）、去标识化或匿名化处理、访问控制措施等。此外，我们还会不断加强安装在您设备端的软件的安全能力。例如，我们会在您的设备本地完成部分信息加密工作，以巩固安全传输；我们会了解您设备安装的应用信息和运行的进程信息，以预防病毒、木马等恶意程序。</p>
+        <p class="indent">我们建立了保障个人信息安全专门的管理制度、流程和组织。例如，我们严格限制访问信息的人员范围，要求他们遵守保密义务并进行审计，违反义务的人员会根据规定进行处罚。我们也会审查该管理制度、流程和组织，以防未经授权的人员擅自访问、使用或披露用户的信息。</p>
+        <p class="indent">2. 安全事件处置措施</p>   
+        <p class="indent">若发生个人信息泄露、损毁、丢失等安全事件，我们会启动应急预案，阻止安全事件扩大。安全事件发生后，我们会及时以推送通知、邮件等形式告知您安全事件的基本情况、我们即将或已经采取的处置措施和补救措施，以及我们对您的应对建议。如果难以实现逐一告知，我们将通过公告等方式发布警示。</p>
+        <strong>四、我们如何使用信息</strong> 
+        <p class="indent">我们严格遵守法律法规的规定以及与用户的约定，按照本隐私保护指引所述使用收集的信息，以向您提供更为优质的服务。</p>
+        <p class="indent">1. 信息使用规则</p>
+        <p class="indent">我们会按照如下规则使用收集的信息：</p>
+        <p class="indent">(1)我们会根据已收集的信息向您提供各项功能与服务，包括提供相应壁纸、壁纸专辑等服务</p>
+        <p class="indent">(2)我们会使用cookie及相关技术收集您的账号号码、搜索记录、浏览历史、位置信息等特征为您提供个性化服务，包括基于对应账号号码的特征标签进行间接人群画像并向您提供更加精准和个性化的服务和内容等、向您展示更具相关性的广告或其他推广内容，优化个性化服务的体验，并评估、改善我们广告投放和其他推广活动的效果；</p>
+        <p class="indent">(3)我们会根据您使用${params && params.appname || '账号管理'}的频率、故障信息、性能信息等分析我们产品的运行情况，以确保服务的安全性并优化我们的产品，提高我们的服务质量。我们不会将我们存储在分析软件中的信息与您提供的个人身份信息相结合。</p>
+        <p class="indent">2. 告知变动目的后征得同意的方式</p>
+        <p class="indent">我们将会在本隐私保护指引所涵盖的用途内使用收集的信息。如我们使用您的个人信息，超出了与收集时所声称的目的及具有直接或合理关联的范围，我们将在使用您的个人信息前，再次向您告知并征得您的明示同意</p>
+        <strong>五、企业合作</strong> 
+        <p class="indent">随着我们业务的持续发展，我们有可能进行合并、收购、资产转让等交易，我们将告知您相关情形，按照法律法规及不低于本指引所要求的标准继续保护或要求新的控制者继续保护您的个人信息。</p>
+        <p class="indent">另外，根据相关法律法规及国家标准，以下情形中，我们可能会共享、转让、公开披露个人信息无需事先征得个人信息主体的授权同意：</p>
+        <p class="indent">(1)与国家安全、国防安全直接相关的；</p>
+        <p class="indent">(2)与公共安全、公共卫生、重大公共利益直接相关的；</p>
+        <p class="indent">(3)与犯罪侦查、起诉、审判和判决执行等直接相关的；</p>
+        <p class="indent">(4)出于维护个人信息主体或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；</p>
+        <p class="indent">(5)个人信息主体自行向社会公众公开的个人信息；</p>
+        <p class="indent">(6)从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。</p>
+        <strong>六、您的权利</strong> 
+        <p class="indent">在您使用${params && params.appname || '账号管理'}期间，为了您可以更加便捷地访问、更正、删除您的个人信息，同时保障您撤回对个人信息使用的同意及注销帐号的权利，我们在产品设计中为您提供了相应的操作设置，您可以参考下面的指引进行操作。此外，我们还设置了投诉举报渠道，您的意见将会得到及时的处理。</p>
+        <strong>七、变更</strong> 
+        <p class="indent">我们可能会适时对本指引进行修订。当指引的条款发生变更时，我们会在您登录及版本更新时以推送通知、弹窗的形式向您展示变更后的指引。请您注意，只有在您点击弹窗中的同意按钮后，我们才会按照更新后的指引收集、使用、存储您的个人信息。</p>
+        <strong>八、与我们联系</strong> 
+        <p class="indent">1. 当您有其他的投诉、建议、未成年人个人信息相关问题时，请通过 邮箱：${params && params.qq || 'zhmgr@accountmgr.com'}与我们联系。</p>
+        <p class="indent">2. 我们将尽快审核所涉问题，并在验证您的用户身份后的十五天内予以回复。</p>
+       `;
+            _html.style.display = 'block'
+        }()
+    </script>
+</body>
+
+</html>
